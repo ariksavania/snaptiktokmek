@@ -1,0 +1,14 @@
+{
+  "name": "tiktok-downloader-bot",
+  "version": "1.0.0",
+  "description": "TikTok Video & Audio Downloader CLI Bot",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "express": "^5.2.1"
+  }
+}

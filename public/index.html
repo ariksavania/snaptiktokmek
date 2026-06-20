@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTik - Download Video TikTok Tanpa Watermark Gratis</title>
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Download video TikTok tanpa watermark secara online dengan kualitas HD tercepat dan 100% gratis. Cukup tempel tautan video dan unduh sekarang!">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo" id="logo">
+                <span class="logo-accent"><i class="fa-brands fa-tiktok"></i> Snap</span>Tik
+            </a>
+            <div class="lang-selector">
+                <i class="fa-solid fa-globe"></i>
+                <span>Indonesian</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="hero-bg-glow"></div>
+            <div class="container hero-container">
+                <h1 class="hero-title">TikTok Downloader</h1>
+                <p class="hero-subtitle">Download video TikTok tanpa watermark secara online, cepat, dan gratis.</p>
+
+                <!-- Input Form Container -->
+                <div class="downloader-card" id="downloader-card">
+                    <form id="download-form" class="download-form">
+                        <div class="input-wrapper">
+                            <i class="fa-solid fa-link input-icon"></i>
+                            <input 
+                                type="url" 
+                                id="tiktok-url" 
+                                placeholder="Tempel tautan video TikTok di sini..." 
+                                required
+                                autocomplete="off"
+                            >
+                            <button type="button" id="paste-btn" class="paste-btn" title="Tempel dari Clipboard">
+                                <i class="fa-solid fa-paste"></i> Tempel
+                            </button>
+                        </div>
+                        <button type="submit" id="submit-btn" class="submit-btn">
+                            <span>Download</span> <i class="fa-solid fa-download"></i>
+                        </button>
+                    </form>
+
+                    <!-- Loading Spinner -->
+                    <div id="loader" class="loader hidden">
+                        <div class="spinner"></div>
+                        <p class="loader-text">Sedang memproses tautan, harap tunggu sebentar...</p>
+                    </div>
+
+                    <!-- Error Alert -->
+                    <div id="error-alert" class="error-alert hidden">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                        <span id="error-message">Terjadi kesalahan. Silakan coba lagi.</span>
+                    </div>
+                </div>
+
+                <!-- Result Layout -->
+                <div class="result-card hidden" id="result-card">
+                    <div class="result-header">
+                        <div class="avatar-icon" id="avatar-container">
+                            <img src="" alt="Avatar" id="result-avatar" class="user-avatar-img hidden">
+                            <i class="fa-solid fa-circle-user avatar-placeholder" id="avatar-placeholder"></i>
+                        </div>
+                        <div class="user-details">
+                            <h3 id="result-username">@username</h3>
+                            <p class="result-caption" id="result-caption">Deskripsi video TikTok akan muncul di sini.</p>
+                        </div>
+                    </div>
+
+                    <!-- Video Thumbnail Preview Box -->
+                    <div class="video-preview-wrapper" id="video-preview-wrapper">
+                        <div class="video-preview-overlay">
+                            <i class="fa-solid fa-play play-overlay-icon"></i>
+                        </div>
+                        <img src="" alt="Video Preview" id="result-thumbnail" class="video-thumbnail-img">
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <a href="#" id="download-video-btn" class="action-btn download-video" target="_blank" download>
+                            <i class="fa-solid fa-video"></i> Download Video (HD)
+                        </a>
+                        <a href="#" id="download-music-btn" class="action-btn download-audio" target="_blank" download>
+                            <i class="fa-solid fa-music"></i> Download MP3 (Audio Only)
+                        </a>
+                        <button type="button" id="reset-btn" class="action-btn reset-flow">
+                            <i class="fa-solid fa-rotate-left"></i> Download Video Lainnya
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Features Info Section -->
+        <section class="features-section">
+            <div class="container grid-container">
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Cepat & Mudah</h3>
+                    <p>Unduh video apa pun hanya dalam hitungan detik. Cukup tempel tautan dan unduh.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>100% Aman</h3>
+                    <p>Kami menghormati privasi Anda. Tidak perlu login atau menginstal perangkat lunak tambahan.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <h3>Kualitas HD</h3>
+                    <p>Unduh video dalam resolusi tinggi tanpa watermark yang mengganggu visual video Anda.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title">Pertanyaan yang Sering Diajukan (FAQ)</h2>
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah saya harus membayar untuk download video TikTok?</h4>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tidak, layanan kami 100% gratis untuk semua orang tanpa batasan jumlah video yang diunduh.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Di mana video TikTok disimpan setelah diunduh?</h4>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Video akan disimpan di folder "Unduhan" atau "Downloads" standar perangkat Anda, kecuali Anda memilih lokasi penyimpanan yang berbeda pada pengaturan browser Anda.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>Apakah aplikasi SnapTik menyimpan riwayat unduhan saya?</h4>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tidak. Kami tidak menyimpan salinan video yang Anda unduh ataupun melacak riwayat pencarian Anda di server kami.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>@2026 Snaptik Downloader. Dibuat oleh Indralana</p>
+            <div class="footer-links">
+                <a href="#">Ketentuan Layanan</a>
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Hubungi Kami</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Client Logic JS -->
+    <script src="app.js"></script>
+</body>
+</html>
